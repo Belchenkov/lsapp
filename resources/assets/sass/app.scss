@@ -6,4 +6,12 @@
 @import "variables";
 
 // Bootstrap
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+//@import "bootstrap.min";
+//@import "bootswatch";
+@import "custom";
+
+
+
+body {
+    font-size: 20px;
+}

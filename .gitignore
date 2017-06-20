@@ -3,7 +3,7 @@
 /public/storage
 /storage/*.key
 /vendor
-/.idea
+/.ideagit connit -m
 /.vagrant
 Homestead.json
 Homestead.yaml
