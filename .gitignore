@@ -3,6 +3,7 @@
 /public/storage
 /storage/*.key
 /vendor
+vendor
 /.ideagit connit -m
 /.vagrant
 Homestead.json
