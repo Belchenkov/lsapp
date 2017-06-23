@@ -14,7 +14,7 @@
 
          <div class="form-group">
             {{ Form::label('title', 'Body')}}
-            {{ Form::textarea('body', $post->body, ['id' => 'article-ckeditor' ,'class' => 'form-control', 'placeholder' => 'Enter Body ...']) }}
+            {{ Form::textarea('body', '', ['id' => 'article-ckeditor' ,'class' => 'form-control', 'placeholder' => 'Enter Body ...']) }}
         </div>
         {{ Form::hidden('_method', 'PUT')}}
         {{ Form::submit('Update', ['class' => 'btn btn-primary']) }}
