@@ -5,6 +5,9 @@
     @if (!empty($post))
         <h1>{{ $post->title }}</h1>
         <hr>
+        
+        <img style="width:100%" src="/storage/cover_images/{{ $post->cover_image }}" alt="{{ $post->cover_image }}">
+
         <div>
             {!! $post->body !!}
         </div>

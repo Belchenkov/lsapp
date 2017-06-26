@@ -5,7 +5,7 @@
 
     <h1 class="text-center">Create Post</h1>
     
-    {!! Form::open(['action' => 'PostController@store','method' => 'post', 'class' => 'col-sm-8 col-sm-offset-2']) !!}
+    {!! Form::open(['action' => 'PostController@store','method' => 'post', 'enctype'=>'multipart/form-data','class' => 'col-sm-8 col-sm-offset-2']) !!}
     
         <div class="form-group">
             {{ Form::label('title', 'Title')}}
@@ -16,6 +16,10 @@
             {{ Form::label('title', 'Body')}}
             {{ Form::textarea('body', '', ['id' => 'article-ckeditor' ,'class' => 'form-control', 'placeholder' => 'Enter Body ...']) }}
         </div>
+
+        <div class="form-group">
+            {{ Form::file('cover_image') }}
+        </div> 
 
         {{ Form::submit('Submit', ['class' => 'btn btn-primary']) }}
 
